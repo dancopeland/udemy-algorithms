@@ -3,15 +3,15 @@
 
 using namespace std;
 
-int CountElements(int a[], int n, int x, int index){
+int CountElements(int a[], int n, int x, int count){
     // base case
     
-    if (n == 0){return index;}
+    if (n == 0){return count;}
 
     if (a[0] == x){
-        index++;
+        count++;
     }
-    return CountElements(a+1, n-1, x, index);
+    return CountElements(a+1, n-1, x, count);
 }
 
 int main(){
