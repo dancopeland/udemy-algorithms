@@ -22,14 +22,12 @@ void printPermutation(char str[], int index){
         printPermutation(str, index + 1);
         swap(str[i],str[index]);
     }
-
-    
     return;
 };
 
 int main(){
     char a[100] = "abc";
-    
+
     printPermutation(a,0);
 
 

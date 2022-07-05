@@ -30,7 +30,7 @@ int main(){
     cin >> n;
     int len = length(n);
     int output = convertStringtoInt(n, len) ;
-    cout << output  ;
+    cout << output << endl ;
     cout << output * 2 ;
     
 
